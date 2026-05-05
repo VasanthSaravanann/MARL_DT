@@ -1,0 +1,28 @@
+{
+    "environment": {
+        "possible_agents": ["machine_1", "machine_2", "robot_1"],
+        "observation_space_dim": 4,
+        "action_space_dim": 4
+    },
+    "digital_twin": {
+        "sync_threshold": 0.1,
+        "retrain_frequency": 10
+    },
+    "marl": {
+        "algorithm": "PPO",
+        "learning_rate": 3e-4,
+        "gamma": 0.99,
+        "train_batch_size": 4000,
+        "sgd_minibatch_size": 128
+    },
+    "kpi": {
+        "target_throughput": 0.9,
+        "target_quality": 0.95,
+        "target_energy_consumption": 0.7,
+        "target_maintenance_cost": 0.5
+    },
+    "training": {
+        "num_iterations": 1000,
+        "evaluation_interval": 10
+    }
+}
